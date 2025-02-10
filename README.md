@@ -3,6 +3,7 @@
 2. Design useable systems through iteration and feedback.
 
 **Grade Breakdown**
+
 Design Section Participation: 10%
 Weekly assignments: 60% (5% each)
 Midterm Project: 10%
