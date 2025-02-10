@@ -4,7 +4,7 @@
 
 **Grade Breakdown**
 
-Design Section Participation: 10%
-Weekly assignments: 60% (5% each)
-Midterm Project: 10%
-Final Project: 20%
+- Design Section Participation: 10%
+- Weekly assignments: 60% (5% each)
+- Midterm Project: 10%
+- Final Project: 20%
