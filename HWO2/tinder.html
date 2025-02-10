@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!---the bootstrap package, if i keep all the orginal lines from professsor 
+  will cause the botton text to not align with the image
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" crossorigin="anonymous">  
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+    body { /*entire html must be */
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+ 
+    .header {
+      width: 300px; /* Match profile image width */
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px; /* Adjusted for better proportion */
+    }
+
+    .divider {
+      width: 300px; /* Match profile image width */
+      height: 1px;
+      background-color: rgb(200, 200, 200);
+      margin: 10px 0;
+    }
+
+    .profile {
+      width: 300px;
+      border-radius: 10px;
+      
+    }
+
+    .person-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .info { /*white region*/
+      width: 280px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border: 1px solid rgb(238, 237, 237);
+      border-top: none;
+    }
+    .nameText {
+      font-weight: bold;
+      font-size: 16px;
+      color: black;
+    }
+
+    .status {
+      color: rgb(176, 176, 176);
+      font-size: 13px;
+    }
+
+    .BottomRow {
+      background-color: rgb(166, 166, 166);
+      border-radius: 20px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center; /* keep heart and text center*/
+      align-items: center;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      width: 200px ; /* size of the button to the info */
+      margin: 0 auto; /* made the button center, only solution*/
+
+    }
+
+    .heart-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px; /* make it right nd text left */
+    }
+
+    .LikeText {
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!--Call the class so the image is maniupated-->
+    <div class="header">
+      <img src="https://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_logo.png" class="logo">
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="profile">
+      <img src="https://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_person.png" class="person-img">
+    </div>
+
+    <div class="info">
+      <span class="nameText">Sean Rad, 29</span>
+      <br>
+      <span class="status">Verified</span>
+    </div>
+  
+    <div class="BottomRow">
+      <img src="https://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/heart.png" class="heart-icon">
+      <span class="LikeText">Like Me On Tinder</span>
+    </div>
+  </div>
+</body>
+</html>
