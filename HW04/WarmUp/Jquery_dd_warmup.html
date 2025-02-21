@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--uni: rah2236, Rayan Hayle-->
+  <title>jQuery Drag and Drop Warmup HW04</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+  <!-- Connect to js file-->
+  <script src="Jquery_dd_warmup.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around; /* adds space between the two box */
+      align-items: center;
+      margin-top: 50px;
+    }
+    #draggable { /* the box being dragged */
+      width: 140px;
+      height: 110px;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+      border: 2px solid black;
+      background-color: white;
+    }
+    #droppable {
+      width: 200px;
+      height: 200px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: left;
+      position: relative;
+      line-height: 200px;
+      color: black;
+      background-color: lightgrey;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+
+<h2>jQuery UI Drag and Drop Warmup</h2>
+<!-- id is refernce to js code -->
+<div class="container">
+  <div id="draggable">Drag me to my target</div>
+  <div id="droppable">Drop here</div>
+</div>
+
+</body>
+</html>

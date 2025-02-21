@@ -1,0 +1,44 @@
+/*Name: Rayan Hayle UNI: Rah2236*/
+#trash {
+  border: 1px dashed blue;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem; /* Equivalent to mt-4 in Bootstrap */
+}
+
+body{
+  font-family:'Times New Roman', Times, serif;
+  background-color: #e8f4f8;
+}
+h1{
+  background-color: #c1e1ec;
+  text-align: center;
+}
+.input-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.sale-record {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  cursor: move;
+  background-color: #f9f9f9;
+}
+.sale-record:hover {
+  background-color: lightyellow;
+}
+.sale-record {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  cursor: move;
+}
+
+.sale-record:hover {
+  background-color: lightyellow;
+  color:gray ;
+}

@@ -1,72 +1,26 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="MakeTweet.css">
 
-  <style>
-    body{
-      background-color: rgb(157, 207, 238);
-      align-items: center;
-      margin:30px;
-    }
-  
-
-    h1{
-      font-style: italic;
-      text-align: center;
-      padding: 8px;
-    }
-    textarea{
-      color: black;
-      border-radius: 10px;}
-
-    .post_button{
-      background-color:white;
-      color:rgb(29, 161, 242);
-      border-color:rgb(29, 161, 242);
-      border-style:solid;
-      height: 50px;
-      width: 105px;
-      cursor: pointer;
-      border-radius: 5px;
-      margin-left:8px;
-      transition: (background-color,1s color, 1s);
-    }
-    .post_button:hover{
-      /* invert color */
-      background-color:rgb(29, 161, 242);
-      color: white;
-    }
-    .post_button:active{
-      opacity: 0.7;
-    }
-    .ShowColorCount{
-      font-weight: normal;
-      color: lightgrey;
-    }
-    .ShowColorCount.negative_Num{
-      color: red;
-      font-weight: bold;
-    }
-  </style>
-  
   <body>
       <!--
-      task 1: show length of input troughout✅ 
-      task 2: once click, remove text ✅  
+      task 1: show length of input troughout
+      task 2: once click, remove text  
       task 3: show count throughout 
       task 4: post ONLY when length limit is satisfied
       task 5: show all posts-->
     <div>
       <div>  
         <!--1. get input, count the length of input actively-->
-        <h1>The Twitter Page</h1>
-        <textarea id="field1" rows="9" cols="50">Enter Text, limit 30 characters</textarea>
+        <h1>Twitter Page 𐦉 </h1>
+        <textarea id="field1" rows="11" cols="45">Enter Text, limit 30 characters</textarea>
         <br>
 
         <span id="LengthCount" class = "ShowColorCount">Remaining: 30 </span>
 
         <!--4. Make Post meet conditon, show all post-->
         <br>
-        <button class = "post_button" id = postBtn>Post Tweet</button>
+        <button class = "post_button" id = postBtn>Post Tweet 𐦉 </button>
 
         <div id="posts"></div>
 
@@ -76,7 +30,7 @@
             var field = document.getElementById(id);
             var the_counter = document.getElementById("LengthCount");
             var button = document.getElementById("postBtn");
-            var username = "@Chilton"; // Hardcoded username
+            var username = "@RayanHayle"; // Hardcoded username
 
             field.addEventListener("input", function () {
               let length = field.value.length;
@@ -125,7 +79,6 @@
         </script>
       </div>
     </div>
-
   </body>
 </html>
 
