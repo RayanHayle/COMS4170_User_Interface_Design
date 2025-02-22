@@ -1,7 +1,7 @@
 # COMS 2132 Homework 1 -- Written Portion
 ## Rayan Hayle RAH2236
 
-## 2.1 ) Arrange the following functions in increasing order of their asymptotic growth rate. Indicate it two functions grow at the same rate.
+### 2.1 ) Arrange the following functions in increasing order of their asymptotic growth rate. Indicate it two functions grow at the same rate.
 
 - Order of Growth	slowest to fastest:
 O(1)	constant 
