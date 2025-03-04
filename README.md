@@ -2,7 +2,7 @@
 1. Understand users and build websites that suit the needs and abilities.
 2. Design functioning systems through iteration and feedback.
 3. Frontend Development: Build Skill in HTML, CSS, JavaScript
-4. Backend Development: jQuery,Flask, API (server, client)
+4. Backend Development: jQuery,Flask, Python, API (server, client)
 
 **Grade Breakdown**
 - Design Section Participation: 10%
