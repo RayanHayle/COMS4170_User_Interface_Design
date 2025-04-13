@@ -1,0 +1,234 @@
+[
+    {
+        "id": "1",
+        "city": "New York",
+        "average_income": "$80,000",
+        "cost_of_living_index": 120,
+        "job_market": "strong",
+        "housing_cost": "$2,500/month",
+        "similar_cities": ["San Francisco", "Los Angeles", "Boston"],
+        "summary": "New York City offers a robust job market, especially in tech and finance, but the cost of living is high."
+    },
+    {
+        "id": "2",
+        "city": "San Francisco",
+        "average_income": "$100,000",
+        "cost_of_living_index": 150,
+        "job_market": "very strong",
+        "housing_cost": "$3,000/month",
+        "similar_cities": ["New York", "Los Angeles", "Seattle"],
+        "summary": "San Francisco has a thriving tech industry, but high living costs."
+    },
+    {
+        "id": "3",
+        "city": "Los Angeles",
+        "average_income": "$75,000",
+        "cost_of_living_index": 110,
+        "job_market": "strong",
+        "housing_cost": "$2,200/month",
+        "similar_cities": ["San Diego", "San Francisco", "Phoenix"],
+        "summary": "Los Angeles is known for its entertainment industry."
+    },
+    {
+        "id": "4",
+        "city": "Seattle",
+        "average_income": "$90,000",
+        "cost_of_living_index": 130,
+        "job_market": "strong",
+        "housing_cost": "$2,800/month",
+        "similar_cities": ["San Francisco", "Portland", "Denver"],
+        "summary": "Seattle is known for its tech industry and coffee culture."
+    },
+    {
+        "id": "5",
+        "city": "Chicago",
+        "average_income": "$70,000",
+        "cost_of_living_index": 100,
+        "job_market": "average",
+        "housing_cost": "$1,800/month",
+        "similar_cities": ["Detroit", "New York", "Philadelphia"],
+        "summary": "Chicago has a diverse economy and offers a lower cost of living than New York."
+    },
+    {
+        "id": "6",
+        "city": "Austin",
+        "average_income": "$85,000",
+        "cost_of_living_index": 95,
+        "job_market": "strong",
+        "housing_cost": "$2,000/month",
+        "similar_cities": ["Dallas", "San Antonio", "Houston"],
+        "summary": "Austin is known for its vibrant music scene and growing tech industry."
+    },
+    {
+        "id": "7",
+        "city": "Boston",
+        "average_income": "$95,000",
+        "cost_of_living_index": 140,
+        "job_market": "very strong",
+        "housing_cost": "$2,700/month",
+        "similar_cities": ["New York", "Philadelphia", "Washington D.C."],
+        "summary": "Boston has a strong educational sector and a robust job market."
+    },
+    {
+        "id": "8",
+        "city": "Miami",
+        "average_income": "$60,000",
+        "cost_of_living_index": 105,
+        "job_market": "average",
+        "housing_cost": "$2,200/month",
+        "similar_cities": ["Orlando", "Tampa", "Jacksonville"],
+        "summary": "Miami is known for its beaches and tourism industry."
+    },
+    {
+        "id": "9",
+        "city": "Denver",
+        "average_income": "$75,000",
+        "cost_of_living_index": 115,
+        "job_market": "strong",
+        "housing_cost": "$2,400/month",
+        "similar_cities": ["Boulder", "Colorado Springs", "Salt Lake City"],
+        "summary": "Denver offers a great quality of life with a strong outdoor culture."
+    },
+    {
+        "id": "10",
+        "city": "Washington D.C.",
+        "average_income": "$90,000",
+        "cost_of_living_index": 145,
+        "job_market": "very strong",
+        "housing_cost": "$3,200/month",
+        "similar_cities": ["Baltimore", "Philadelphia", "Richmond"],
+        "summary": "Washington D.C. is the political hub of the country with a diverse economy."
+    },
+    {
+        "id": "11",
+        "city": "San Diego",
+        "average_income": "$70,000",
+        "cost_of_living_index": 105,
+        "job_market": "average",
+        "housing_cost": "$2,100/month",
+        "similar_cities": ["Los Angeles", "Phoenix", "Las Vegas"],
+        "summary": "San Diego is known for its beaches and tech industry."
+    },
+    {
+        "id": "12",
+        "city": "Portland",
+        "average_income": "$80,000",
+        "cost_of_living_index": 125,
+        "job_market": "strong",
+        "housing_cost": "$2,400/month",
+        "similar_cities": ["Seattle", "San Francisco", "Vancouver"],
+        "summary": "Portland is known for its green spaces and outdoor lifestyle."
+    },
+    {
+        "id": "13",
+        "city": "Phoenix",
+        "average_income": "$65,000",
+        "cost_of_living_index": 90,
+        "job_market": "average",
+        "housing_cost": "$1,800/month",
+        "similar_cities": ["San Diego", "Las Vegas", "Tucson"],
+        "summary": "Phoenix is known for its desert climate and rapidly growing tech sector."
+    },
+    {
+        "id": "14",
+        "city": "Dallas",
+        "average_income": "$85,000",
+        "cost_of_living_index": 95,
+        "job_market": "strong",
+        "housing_cost": "$2,000/month",
+        "similar_cities": ["Austin", "Houston", "San Antonio"],
+        "summary": "Dallas has a strong job market, especially in business and finance."
+    },
+    {
+        "id": "15",
+        "city": "Orlando",
+        "average_income": "$55,000",
+        "cost_of_living_index": 90,
+        "job_market": "average",
+        "housing_cost": "$1,700/month",
+        "similar_cities": ["Miami", "Tampa", "Jacksonville"],
+        "summary": "Orlando is known for its tourism industry, especially theme parks."
+    },
+    {
+        "id": "16",
+        "city": "Tampa",
+        "average_income": "$60,000",
+        "cost_of_living_index": 95,
+        "job_market": "average",
+        "housing_cost": "$1,900/month",
+        "similar_cities": ["Orlando", "Miami", "Jacksonville"],
+        "summary": "Tampa is known for its beaches and a strong local job market."
+    },
+    {
+        "id": "17",
+        "city": "Boulder",
+        "average_income": "$80,000",
+        "cost_of_living_index": 125,
+        "job_market": "strong",
+        "housing_cost": "$2,500/month",
+        "similar_cities": ["Denver", "Colorado Springs", "Salt Lake City"],
+        "summary": "Boulder is known for its vibrant outdoor lifestyle and tech scene."
+    },
+    {
+        "id": "18",
+        "city": "Colorado Springs",
+        "average_income": "$65,000",
+        "cost_of_living_index": 100,
+        "job_market": "average",
+        "housing_cost": "$2,000/month",
+        "similar_cities": ["Denver", "Boulder", "Salt Lake City"],
+        "summary": "Colorado Springs offers a slower pace of life with a strong outdoor culture."
+    },
+    {
+        "id": "19",
+        "city": "Salt Lake City",
+        "average_income": "$70,000",
+        "cost_of_living_index": 105,
+        "job_market": "strong",
+        "housing_cost": "$2,100/month",
+        "similar_cities": ["Denver", "Boulder", "Boise"],
+        "summary": "Salt Lake City has a growing tech sector and is known for its outdoor recreational opportunities."
+    },
+    {
+        "id": "20",
+        "city": "Baltimore",
+        "average_income": "$70,000",
+        "cost_of_living_index": 110,
+        "job_market": "strong",
+        "housing_cost": "$2,100/month",
+        "similar_cities": ["Washington D.C.", "Philadelphia", "Richmond"],
+        "summary": "Baltimore is known for its waterfront and healthcare sector."
+    },
+    {
+        "id": "21",
+        "city": "Las Vegas",
+        "average_income": "$65,000",
+        "cost_of_living_index": 90,
+        "job_market": "strong",
+        "housing_cost": "$1,800/month",
+        "similar_cities": ["Phoenix", "San Diego", "Tucson"],
+        "summary": "Las Vegas is known for its entertainment industry and affordable housing."
+    },
+   
+    {
+        "id": "23",
+        "city": "Tucson",
+        "average_income": "$55,000",
+        "cost_of_living_index": 85,
+        "job_market": "average",
+        "housing_cost": "$1,400/month",
+        "similar_cities": ["Phoenix", "Las Vegas", "Albuquerque"],
+        "summary": "Tucson is known for its desert landscapes and a growing tech and aerospace sector."
+    },
+    {
+        "id": "24",
+        "city": "Boise",
+        "average_income": "$65,000",
+        "cost_of_living_index": 90,
+        "job_market": "average",
+        "housing_cost": "$1,600/month",
+        "similar_cities": ["Salt Lake City", "Denver", "Las Vegas"],
+        "summary": "Boise has a rapidly growing tech sector and a strong outdoor culture."
+
+    }
+]
