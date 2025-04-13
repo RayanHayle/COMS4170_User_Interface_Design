@@ -1,0 +1,40 @@
+<!--Rayan Hayle RAH2236 click View More-->
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - Details{% endblock %}
+
+{% block content %}
+<div class="container book-detail">
+    <h1>{{ title }}</h1>
+    <p><strong>Author:</strong> <a href="{{ url_for('search_books', query=author) }}">{{ author }}</a></p>
+    <p><strong>Rating:</strong> {{ rating }}</p>
+    <p><strong>Genres:</strong> {{ genres }}</p>
+    <p><strong>Summary:</strong> {{ summary }}</p>
+
+    <h4>More by {{ author }}</h4>
+    <div class="row">
+        {% for more_book in more_books_by_author %}
+        <div class="col-md-3 mb-4">
+            <div class="card book-card">
+                <!-- Image with responsive size and proper aspect ratio -->
+                <img src="{{ more_book.cover_image }}" class="card-img-top" alt="{{ more_book.title }}" style="max-height: 250px; width: 100%; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ more_book.title }}</h5>
+                    <p class="card-text">{{ more_book.author }}</p>
+                    <a href="{{ url_for('view_book', key=more_book.url.split('/')[-1]) }}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h4>You might also like:</h4>
+    <ul>
+        {% for similar_book in similar_books %}
+        <li>
+            <a href="{{ similar_book.url }}">{{ similar_book.title }}</a> {{ similar_book.author }}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

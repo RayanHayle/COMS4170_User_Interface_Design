@@ -1,0 +1,70 @@
+body {
+  font-family: 'Times New Roman', Times, serif; /* Set the font for the entire body */
+  background-color: #bfddfc; /* Light shade of blue for the body */
+}
+
+.navbar {
+  background-color: #7ba4d9; /* Darker blue color for the navbar */
+  height: 60px; /* Set a fixed height for the navbar */
+}
+
+.navbar .navbar-brand {
+  height: 60px; /* Match height of the navbar */
+  display: flex; /* Align items vertically */
+  align-items: center; /* Center the text vertically */
+  color: white; /* Set brand text color to white */
+}
+
+.navbar .form-control {
+  height: 40px; /* Set fixed height for input to match navbar height */
+  border: 1px solid #ced4da; /* Border for input */
+}
+
+.navbar .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly visible background on focus */
+  border: 1px solid #80bdff; /* Focused border color */
+  box-shadow: none; /* Remove box shadow on focus */
+}
+
+.navbar .nav-link {
+  color: white; /* Navbar link color */
+  font-weight: bold; /* Make the text bold */
+}
+
+.navbar .nav-link:hover {
+  color: #f5f5dc; /* Light color on hover */
+}
+.book-card {
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-title {
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.book-card .card-img-top {
+  height: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  width: 110%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}

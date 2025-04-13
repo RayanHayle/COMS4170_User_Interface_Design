@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Book Search{% endblock %}
+
+{% block content %}
+<h2 class="text-center">Search for Books</h2>
+<form action="{{ url_for('search_books') }}" method="get" class="text-center my-4">
+    <input type="text" name="query" placeholder="Search for books..." required class="form-control w-50 d-inline">
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+<hr>
+
+<h2 class="mt-4 text-center">Featured Books</h2>
+
+<!-- Top Row with 3 books -->
+<div class="row justify-content-center">
+    {% for book in books[:3] %}
+    <div class="col-md-3 mb-4">
+        <div class="card book-card">
+            {% if book.cover_i %}
+            <img src="https://covers.openlibrary.org/b/id/{{ book.cover_i }}-M.jpg" class="card-img-top" alt="Book Cover">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ book.title }}</h5>
+                <p class="card-text">Author: {{ book.author_name[0] if book.author_name else 'N/A' }}</p>
+                <div class="text-center mt-2">
+                    <a href="{{ url_for('view_book', key=book.key.split('/')[-1]) }}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Bottom Row with 3 books -->
+<div class="row justify-content-center">
+    {% for book in books[3:6] %}
+    <div class="col-md-3 mb-4">
+        <div class="card book-card">
+            {% if book.cover_i %}
+            <img src="https://covers.openlibrary.org/b/id/{{ book.cover_i }}-M.jpg" class="card-img-top" alt="Book Cover">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ book.title }}</h5>
+                <p class="card-text">Author: {{ book.author_name[0] if book.author_name else 'N/A' }}</p>
+                <div class="text-center mt-2">
+                    <a href="{{ url_for('view_book', key=book.key.split('/')[-1]) }}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

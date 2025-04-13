@@ -1,0 +1,35 @@
+<!--Rayan Hayle RAH2236-->
+{% extends "base.html" %}
+
+{% block title %}Book Search Results{% endblock %}
+
+{% block content %}
+<h2 class="text-center mb-4">Results for: "{{ query }}"</h2>
+
+{% if books %}
+<div class="container">
+    <div class="row">
+        {% for book in books %}
+        <div class="col-md-3 mb-4">
+            <div class="card book-card">
+                {% if book.cover_i %}
+                <img src="https://covers.openlibrary.org/b/id/{{ book.cover_i }}-M.jpg" class="card-img-top" alt="Book Cover">
+                {% else %}
+                <img src="{{ url_for('static', filename='placeholder.png') }}" class="card-img-top" alt="No Cover Available">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.title }}</h5>
+                    <p class="card-text">{{ book.author_name[0] if book.author_name else 'Unknown Author' }}</p>
+                    <a href="{{ url_for('view_book', key=book.key.split('/')[-1]) }}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% else %}
+<p class="text-center">No books found for your search.</p>
+{% endif %}
+
+<p class="text-center mt-4"><a href="{{ url_for('home') }}" class="btn btn-secondary">Back to Home</a></p>
+{% endblock %}

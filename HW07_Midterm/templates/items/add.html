@@ -1,0 +1,47 @@
+<!--Rayan Hayle RAH2236-->
+{% extends "base.html" %}
+
+{% block title %}Add New Item{% endblock %}
+
+{% block content %}
+<h2 class="text-center">Add New Item</h2>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul class="alert alert-success">
+            {% for category, message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+<!-- Display error messages -->
+{% if errors %}
+    <ul class="alert alert-danger">
+        {% for error in errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+<form method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" name="title" id="title" required>
+    </div>
+    <div class="mb-3">
+        <label for="author" class="form-label">Author</label>
+        <input type="text" class="form-control" name="author" id="author" required>
+    </div>
+    <div class="mb-3">
+        <label for="rating" class="form-label">Rating (Number)</label>
+        <input type="text" class="form-control" name="rating" id="rating" required>
+    </div>
+    <div class="mb-3">
+        <label for="summary" class="form-label">Summary</label>
+        <textarea class="form-control" name="summary" id="summary" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
